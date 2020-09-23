@@ -1,0 +1,120 @@
+<Html>
+<Head><Title>Simple Amp 2.0 [Troubleshooting]</title>
+</head>
+<body bgcolor=white>
+<table width=450><tr><td>
+<center>
+<img src="title.png"><br>
+<font face="Arial" size=2>
+By Paul Berlin 2002-2003 - Freeware!<br>
+<a href="mailto:berlin_paul@hotmail.com">berlin_paul@hotmail.com</a><br>
+<a href="http://pab.dyndns.org">http://pab.dyndns.org</a><br>
+<p>
+</center>
+<a href="index.html">back to index</a>
+</tr></td>
+<tr><td bgcolor=00AEEF>
+<font face="Arial" size=2>
+<b>Troubleshooting</b>
+</tr></td>
+<tr><td bgcolor=5FCFF9 border=5>
+<p><br>
+<font face="Arial" size=2>
+Here are solutions to most problems.
+<p>
+<b>Problem: Stuttering/Skipping sound.</b>
+<li>Update your soundcard drivers to the newest available.</li>
+<li>Update your video card drivers.</li>
+<li>Increase sound buffer.</li>
+<li>Disable DSP.</li>
+<li>Disable DirectX Effects.</li>
+<li>Select the most appropriate Mixer for your system (see info in settings window).</li>
+<li>Reduce Sampling Frequency.</li>
+<li>If playing modules, try reducing Max Channels.</li>
+<li>Try another Output Engine.</li>
+<p>
+<b>Problem: I am told that I am missing files when I start Simple Amp.</b>
+<li>Try reinstalling simple amp.</li>
+<li>Get the missing file from the internet.</li>
+<p>
+<b>Problem: The File Browser is so damn slow...</b>
+<li>The first time you browse an file, it will take an while, but later it should go alot faster.</li>
+<li>Make sure Media Library is enabled.</li>
+<li>Avoid browsing files over slow network connections.</li>
+<li>VBR (Variable Bitrate) MP3s are slower than ordinary mp3s when browsing them for the first time.</li>
+<p>
+<b>Problem: Slow Visualization.</b>
+<li>Decrease/Increase Update speed.</li>
+<li>Turn off Fade or select an faster fade speed.</li>
+<li>Use an skin with smaller visualization area.</li>
+<li>Choose an less CPU intensive visualization (like volume meters).</li>
+<li>Turn off the visualization.</li>
+<p>
+<b>Problem: Overall slowness.</b>
+<li>Update Audio/Video drivers.</li>
+<li>Update your computer.</li>
+<p>
+<b>Problem: Opening/browsing some modules chrashes the program.</b>
+<li>Do not open or browse them. FMOD cannot open some modules, and for some reason crashes. This is out of my control.</li>
+<p>
+<b>Problem: FMOD Init Error when starting.</b>
+<li>Try restarting before you do anything.</li>
+<li>Select an other mixer/output engine/soundcard and restart.</li>
+<li>If DirectX effects is on, increase buffer to 100ms or over.</li>
+<li>Delete Settings.ini and try again, with autodetect & default settings.</li>
+<p>
+<b>Problem: Surround sound has no hearable effect.</b>
+<li>Surround sound does not make as big an effect on all songs, try an other one.</li>
+<li>Surround sound only (for now) works on CPU/FPU mixer.</li>
+<li>Surround sound does not work on some music types.</li>
+<li>Surround sounds best on headphones or stereo speakers.</li>
+<p>
+<b>Problem: Media Library is slow.</b>
+<li>Perform Maintenance. In Settings/Media Library tab/Library Maintenance.</li>
+<p>
+<b>Problem: The next song in the playlist doesn't play.</b>
+<li>Turn on auto advance. Press A when focus is on the main player window.</li>
+<li>You have reached the end of your playlist. Try turning on repeat and press next.</li>
+<p>
+<b>Problem: The wrong covers are shown in the File Info window.</b>
+<li>Name the cover images to '[Artist] - [Album] [Front/Back]' for best performance. Also note that only .BMP, .GIF & .JPG images can be used.</li>
+<li>This is just an guess by the program, do not keep images other than covers in the same folder as your music for best performance.</li>
+<p>
+<b>Problem: Playing CD Audio works bad or songs are skipped.</b>
+<li>Well, you're right.</li>
+<p>
+<b>Problem: I want to play an Audio CD from an other drive than the default drive.</b>
+<li>Too bad, you can't.</li>
+<li>Is it so hard to just insert the disc in your other drive?</li>
+<p>
+<b>Problem: There are several small gnomes jumping around on screen whenever I have Simple Amp in focus.</b>
+<li>You can press CTRL+L to toggle them on/off.</li>
+<li>Press CTRL+I to make them scream insults.</li>
+<p>
+</td></tr>
+<tr><td>&nbsp</tr></td>
+<tr><td bgcolor=00AEEF>
+<font face="Arial" size=2>
+<b>Known Bugs/Problems</b>
+</tr></td>
+<tr><td bgcolor=5FCFF9 border=5>
+<p><br>
+<font face="Arial" size=2>
+<p>
+Here are some known bugs. If you find any other bug and you can reproduce it, please mail me about it.
+<p>
+<li>Sometimes Media Library seems to load with strange or empty information. (May be fixed already)</li>
+<li>In File Viewer, it says that the song has been played and skipped alot of times (like 16000, or -16000). (May be fixed already)</li>
+<li>Media Library sometimes reports errors when quitting Simple Amp about not able to save media library. (This may be fixed already)</li>
+<li>Using network paths like //localhost may not work correct with certain parts of the program (like wehn saved in .playlist files). Binding your network paths to a drive will solve this, though.</li>
+<li>Some mp3s with ID3v2 tags do not read correctly with the ID3v23x.DLL. This seems to be a problem with the mp3 tags having a wrong length value for the comments string. But they work fine in WinAmp so I don't know...</li>
+<li>The method of determing if mp3s are VBR is stupid (look in modMisc) and does not always work.</li>
+<p>
+Look in <a href="programming.html">Programming Notes</a> for more bug related info.
+<p>
+</td></tr>
+</table>
+<font face="Arial" size=2>
+<a href="index.html">back to index</a>
+</body>
+</html>

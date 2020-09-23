@@ -1,0 +1,60 @@
+<Html>
+<Head><Title>Simple Amp 2.0 [Programming Notes]</title>
+</head>
+<body bgcolor=white>
+<table width=450><tr><td>
+<center>
+<img src="title.png"><br>
+<font face="Arial" size=2>
+By Paul Berlin 2002-2003 - Freeware!<br>
+<a href="mailto:berlin_paul@hotmail.com">berlin_paul@hotmail.com</a><br>
+<a href="http://pab.dyndns.org">http://pab.dyndns.org</a><br>
+<p>
+</center>
+<a href="index.html">back to index</a>
+</tr></td>
+<tr><td bgcolor=00AEEF>
+<font face="Arial" size=2>
+<b>Programming Notes</b>
+</tr></td>
+<tr><td bgcolor=5FCFF9 border=5>
+<p><br>
+<font face="Arial" size=2>
+Because this program started in early 2002 (now it's september 2003) and it has not been fully rewritten, some parts of the code are older than other parts. Thus some parts are written better than other, some are more commented than other and some are actually just a mess. It may be hard to find your way through the 18000 or so lines of code =).
+<p>
+Feel free to change/add/improve this code, but if you do it would be nice if you <a href="mailto:berlin_paul@hotmail.com">send</a> me the updated code =).
+<p>
+You are free to use this code in your own programs, as long as you give credit where credit is due.
+<p>
+Check out <a href="trouble.html">troubleshooting</a> for some known bugs.
+<p>
+I will probably NOT make any more major versions, but here are some things I would add/fix:
+<p>
+<b>What needs fixing/improving/adding and other ideas</b>
+<li>A complete rewriting would be nice, to clean up, speed up, etc.</li>
+<li>Frameskip for visualization. Currently, peaks dropspeed etc. is set in values per frame. Thus the actual speed of the peaks is different in lower visualization update speeds than in higher. So a drop speed of 10 values per frame with visualization update speed at 50 ms (new frame every 50 ms) that ammounts to 200 values per second. When the update speed is 25 ms it
+is 400 values per second.</li>
+<li>Cleanup/rewrite the code for moving the player window with with playlist docked and screen snap on playlist when playlist is docked to player.</li>
+<li>Perhaps adding music crossfading possibilities to clsFmod.</li>
+<li>Perhaps some more effects in clsImg, for example blur.</li>
+<li>Better systray class, for better control and WinXP 'bubble' tooltips.</li>
+<li>Reading tags from WMA.</li>
+<li>Lables that scroll their content if it does not fit.</li>
+<li>Remake the entire playlist list control to be able to show folders of items. For example one folder for each artist in the list. You would of course be able to open/close the folders.</li>
+<li>Better toolbar controls (in frmAdd) so I can use one control with all buttons, with text label to the right of the buttons without all the buttons being forced the same size.</li>
+<li>Icons in the list in frmAdd (associated icons).</li>
+<li>New and better skin format. Complete control over everything, scripting, PNG-images, resizable playlist (to any size), etc.</li>
+<li>Remove current visualization system (or perhaps simplify it) and add one more similar to Winamps AVS, using perhaps DirectX.</li>
+<li>Perhaps render everyting in DirectX for superfast alpha effects & fades</li>
+<li>Ability for user to enter other information for each file in Media Library, such as Mood, Rating etc. Or perhaps just add it to the ID3v2 tag.</li>
+<li>Reduce the large memory usage.</li>
+<li>Rewrite in Visual C++ instead!</li>
+<li>Come up with a better name! Complex Amp =)</li>
+<li>Only your imagination is the limit! (well sort of)</li>
+<p>
+</td></tr>
+</table>
+<font face="Arial" size=2>
+<a href="index.html">back to index</a>
+</body>
+</html>
