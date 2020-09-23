@@ -1,0 +1,11 @@
+You have to put any images you want to use in visualizations
+in this folder.
+
+* Images has to be 24-bit BMP. Other images may crash Simple Amp.
+* The color magenta (Red=255, Green=0, Blue=255) will be transparent
+  when drawn in Simple Amp.
+* Images used with the beat detector should be square (height & width
+  must be the same).
+
+Missing images will make presets that use them to use the default
+image instead.

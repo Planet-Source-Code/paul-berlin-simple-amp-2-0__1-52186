@@ -1,0 +1,148 @@
+<Html>
+<Head><Title>Simple Amp 2.0 [Configuration]</title>
+</head>
+<body bgcolor=white>
+<table width=450><tr><td>
+<center>
+<img src="title.png"><br>
+<font face="Arial" size=2>
+By Paul Berlin 2002-2003 - Freeware!<br>
+<a href="mailto:berlin_paul@hotmail.com">berlin_paul@hotmail.com</a><br>
+<a href="http://pab.dyndns.org">http://pab.dyndns.org</a><br>
+<p>
+</center>
+<a href="index.html">back to index</a>
+</tr></td>
+<tr><td bgcolor=00AEEF>
+<font face="Arial" size=2>
+<b>Configuration</b>
+</tr></td>
+<tr><td bgcolor=5FCFF9 border=5>
+<p><br>
+<font face="Arial" size=2>
+Check out the <a href="trouble.html">troubleshooting</a> section for more help.
+<p>
+Jump directly to <a href="#vis">Visualizations</a>, <a href="#file">File Browser</a>, <a href="#lib">Media Library</a>, <a href="#dev">Sound Device</a>, <a href="#spk">Speakers</a>, <a href="#fil">File Types</a>.
+<p>
+<a name="#gen">
+<font face="Arial" size=3><b>General</b>
+<font face="Arial" size=2><p>
+<li><b>Always show tray icon</b></li><br>
+This will make the tray icon always visible, even when the player isn't minimized.
+<p>
+<li><b>Start minimized to tray</b></li><br>
+This will start Simple Amp minimized to the tray.
+<p>
+<li><b>Always ontop</b></li><br>
+This will make all the windows of Simple Amp to always be ontop all other windows.
+<p>
+<li><b>Snap windows to screen edges</b></li><br>
+This will make the player and playlist windows 'stick' to the screen edges.
+<p>
+<li><b>Playlist buttons do default action when clicked</b></li><br>
+This will make the playlist buttons do the default action on their popup menus whenever you leftclick them. Rightclick to show the popup menu instead.
+<p>
+<li><b>Dynamic size playlist columns</b></li><br>
+This will make columns have a larger width if the following column(s) is empty. This can make the playlist look a bit cluttered, and perhaps a bit harder to read. This only applies to the playlist when the playlist window is large.
+<p>
+<li><b>Fade windows</b></li><br>
+This will fade the player and playlist windows in when Simple Amp is started. This will not be seen when you have 'Start minimized to tray' enabled. This is pretty useless, turn off to speed up on slower systems.
+<p>
+<li><b>Tray Icon</b></li><br>
+This slider will let you choose the icon that represents Simple Amp in the system tray.
+<p>
+<a name="#vis">
+<font face="Arial" size=3><b>Visualizations</b>
+<font face="Arial" size=2><p>
+<li><b>Visualization update speed</b></li><br>
+This will control how often the visualization part of Simple Amp is updated. One second is 1000 milliseconds. You can divide 1000 with this value to get the frames per second. Setting this value too low will not make the visualization update faster if your computer can't keep up. 
+<p>
+<li><b>Disable fade on all presets</b></li><br>
+This will turn off fade on all loaded presets. This will dramatically speed up the visualization.
+<p>
+<a name="#file">
+<font face="Arial" size=3><b>File Browser</b>
+<font face="Arial" size=2><p>
+<li><b>Read Extended File Information</b></li><br>
+Here you can set up when the file browser should read extended information from
+files you are browsing. Turning this off, speeds up file browsing.
+<p>
+<a name="#lib">
+<font face="Arial" size=3><b>Media Library</b>
+<font face="Arial" size=2><p>
+<li><b>Use Media Library</b></li><br>
+This will enable the use of the media library. This will speed up when reading files, but will take more memory.
+<p>
+<li><b>When there are no tags, get artist & title from filename</b></li><br>
+Usually, music with no tags will not be listed under for example the 'Artist' filter in the Media Library Browser. With this option on, though, the browser will attempt to take Artist and Title from the filename of the music. 
+<p>
+<li><b>Autosize the list columns to fit their content</b></li><br>
+This will size the columns in the Media Library Browser so that their contents are visible. This might make very wide lists though.
+<p>
+<li><b>Hide modules, midis and wavefiles in the Media Library Browser</b></li><br>
+This will hide all modules, midi-files and wave-files when browsing the Media Library. These file types do not contain much useful information anyways and just clutters up the list. Browsing will also go a bit faster with this on.
+<p>
+<li><b>Library Maintenance</b></li><br>
+This will open the maintenance window which will let you clean up the Media Library. You should do this once in a while if you move/remove files played with Simple Amp often.
+<p>
+<a name="#dev">
+<font face="Arial" size=3><b>Sound Device</b>
+<font face="Arial" size=2><p>
+<li><b>Output Engine</b></li><br>
+You should choose Directsound for best performance, but if you experience any problems try Windows Multimedia WaveOut. Use WaveOut under Windows NT.
+<p>
+<li><b>Sound Device</b></li><br>
+Choose your which of your installed soundcards to use. If there are none detected, try another Output Engine.
+<p>
+<li><b>Mixer</b></li><br>
+'Interpolated MMX P5 16 bit' is suitable for Pentium MMX type computers and 'Interpolated MMX P6 16 bit' for Pentium II or better. 'Interpolated CPU/FPU 32 bit' is the slowest mixer, and is for those without MMX support. In order to use the Surround option 'Interpolated CPU/FPU 32 bit' is required.
+<p>
+<li><b>Sampling Frequency</b></li><br>
+This controls the quality of the sound. 44100 Hz is Audio CD quality and 48000 Hz is professional DAT quality. Choose an lower value to speed up.
+<p>
+<li><b>Max Channels</b></li><br>
+This controls the maximum allowed channels playing at once in modules. Setting this to 128 will not slow down when playing an module that uses 16 channels, it just allows 128 channels at once. 
+<p>
+<li><b>Buffer Size</b></li><br>
+More buffer size means more stability, but also means more latency when you seek into a song. So you should set it to the lowest possible that doesn't make the music skip.
+<p>
+<li><b>Enable DSP</b></li><br>
+Checking this box will enable DSP (Digital Sound Processing). DSP will let you view sound visualizations and use sound filters. Disabling DSP will speed up.
+<p>
+<li><b>Enable DirectX 8 Effects</b></li><br>
+Checking this box will enable the ability to use DirectX 8 based effects and the Equalizer. The effects include Chorus, Compressor, Distortion, Echo, Flanger and Gargle. DirectX 8 or higher is required. Unchecking this box will speed up.
+<p>
+<a name="#spk">
+<font face="Arial" size=3><b>Speakers</b>
+<font face="Arial" size=2><p>
+<li><b>Speaker Setup</b></li><br>
+Select your speaker configuration here. This will only have effect on soundcards, drivers and speakers that support the selected setup. If you have chosen Windows Multimedia WaveOut as output engine, these settings might not work correctly. Select 'Use Windows Default / No Change' to not setup the speaker configuration, and instead use the one already in effect when starting Simple Amp.
+<p>
+<li><b>Speaker Panning</b></li><br>
+This will pan the music between the left and right speakers. This is useful if one of your speakers are further away from you than the other. Panning will not work well when playing some modules because they can change it as they want.
+<p>
+<li><b>Surround</b></li><br>
+Surround sound is a fake dolby trick that effectively pans the channel to the center, but inverts the waveform in one speaker to make it sound fuller or spacier, or like it is coming out of space between the 2 speakers. Surround works best with an centered panning and stereo speakers. 'Interpolated CPU/FPU 32 bit' mixer setting is required.
+<p>
+<li><b>Pan Seperation</b></li><br>
+Pan seperation affects modules and how much each sound in the left and right speakers are seperated. An high value will make the module sound more 'stereo'.
+<p>
+<a name="#fil">
+<font face="Arial" size=3><b>File Types</b>
+<font face="Arial" size=2><p>
+This section will let you select which file types you want to open with Simple Amp whenever you doubleclick them.
+<p>
+<li><b>Register file types on start</b></li><br>
+This will make Simple Amp register the file types to be associated with Simple Amp every time you start the program. This is useful to prevent other program from 'stealing' the associations.
+<p>
+<li><b>Default action</b></li><br>
+This will set what action will be performed with the associated files.
+<p>
+Jump directly to <a href="#gen">General</a>, <a href="#vis">Visualizations</a>, <a href="#file">File Browser</a>, <a href="#lib">Media Library</a>, <a href="#dev">Sound Device</a>, <a href="#spk">Speakers</a>.
+<p>
+</td></tr>
+</table>
+<font face="Arial" size=2>
+<a href="index.html">back to index</a>
+</body>
+</html>
